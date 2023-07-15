@@ -1,3 +1,5 @@
+![Platform Badge](https://img.shields.io/badge/platform-Arduino-blue)
+
 # Multifunctional Wheelchair Height Adjustment System
 
 The Multifunctional Wheelchair Project, conducted under the guidance of Dr. Jong Yoon at the University of Washington Bothell, aims to improve the functionality of traditional wheelchairs by allowing users to adjust their height. This repository contains the Arduino source code for the system.
@@ -7,8 +9,7 @@ The Multifunctional Wheelchair Project, conducted under the guidance of Dr. Jong
 2. [Technical Details](#technical-details)
 3. [File Structure](#file-structure)
 4. [Usage](#usage)
-5. [License](#license)
-6. [Contact](#contact)
+5. [Contact](#contact)
 
 ## Project Overview
 
@@ -37,12 +38,7 @@ To use this system, simply press the button corresponding to the desired height 
 
 An emergency stop button is also available. Pressing this button will immediately stop any height adjustment operation.
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Ryan Cho - ryancho@uwb.edu
-
-Project Link: [https://github.com/ryancho/Multifunctional-Wheelchair](https://github.com/ryancho/Multifunctional-Wheelchair)
+Ryan Cho - c.youngbeum@wustl.edu
