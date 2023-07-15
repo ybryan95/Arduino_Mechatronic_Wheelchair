@@ -1,0 +1,58 @@
+//Used to test button assignments
+
+const int button1 = 23;
+const int button2 = 24;
+const int button3 = 25;
+const int buttonh = 22;
+int buttonState1 = 0;
+int buttonState2 = 0;
+int buttonState3 = 0;
+int buttonStateh = 0;
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(button1, INPUT);
+  pinMode(button2, INPUT);
+  pinMode(button3, INPUT);
+  pinMode(buttonh, INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  buttonState1 = digitalRead(button1);
+  buttonState2 = digitalRead(button2);
+  buttonState3 = digitalRead(button3);
+  buttonStateh = digitalRead(buttonh);
+  if (buttonState1 == HIGH) {
+    Serial.println("Postion 1");
+    buttonState2 == LOW;
+    buttonState3 == LOW;
+    buttonStateh == LOW;
+  }
+  else if (buttonState2 == HIGH) {
+    Serial.println("Postion 2");
+    buttonState1 == LOW;
+    buttonState3 == LOW;
+    buttonStateh == LOW;
+  }
+  else if (buttonState3 == HIGH) {
+    Serial.println("Postion 3");
+    buttonState2 == LOW;
+    buttonState1 == LOW;
+    buttonStateh == LOW;
+  }
+  else if (buttonStateh == HIGH) {
+    Serial.println("Postion H");
+    buttonState1 == LOW;
+    buttonState2 == LOW;
+    buttonStateh == LOW;
+  }
+  else {
+    buttonState1 == LOW;
+    buttonState2 == LOW;
+    buttonState3 == LOW;
+    buttonStateh == LOW;
+  }
+}
